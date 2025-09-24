@@ -155,7 +155,7 @@ const Contact = () => {
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">Get In Touch</h2>
             <p className="text-lg opacity-75 leading-relaxed">
-              Ready to collaborate? Drop me a message and let's create something amazing together.
+              Ready to collaborate? Drop me a message and let&apos;s create something amazing together.
             </p>
           </div>
 
@@ -206,7 +206,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 border-2 border-[#0B3D2E]/20 rounded-xl focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm"
-                placeholder="What's this about?"
+                placeholder="What&apos;s this about?"
               />
             </div>
 

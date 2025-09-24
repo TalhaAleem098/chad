@@ -129,8 +129,8 @@ const Page = () => {
         <div className="hidden lg:flex max-w-7xl mx-auto px-3 h-12 items-center justify-center">
           <div className="flex items-center justify-between w-full">
             {navLinks.map((link) => {
-              const isActive = link.id === 'contact' ? pathname === '/contact' : activeSection === link.id;
-              if (link.id === 'contact') {
+              const isActive = link.id === "contact" ? pathname === "/contact" : activeSection === link.id;
+              if (link.id === "contact") {
                 return (
                   <Link
                     key={link.id}
@@ -200,8 +200,8 @@ const Page = () => {
             <div className="bg-white/98 backdrop-blur-xl shadow-xl border-t border-gray-200">
               <div className="px-4 py-3 space-y-1">
                 {navLinks.map((link) => {
-                  const isActive = link.id === 'contact' ? pathname === '/contact' : activeSection === link.id;
-                  if (link.id === 'contact') {
+                  const isActive = link.id === "contact" ? pathname === "/contact" : activeSection === link.id;
+                  if (link.id === "contact") {
                     return (
                       <Link
                         key={link.id}

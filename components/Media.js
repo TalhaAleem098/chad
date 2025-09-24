@@ -154,7 +154,7 @@ const Media = () => {
                                         alt={`Gallery ${index + 1}`}
                                         width={300}
                                         height={400}
-                                        className={`w-40 h-52 sm:w-48 sm:h-60 md:w-56 md:h-72 lg:w-64 lg:h-80 xl:w-72 xl:h-96 object-cover hover:scale-105 transition-all duration-300 ${loadedImages.has(imageSrc) ? 'opacity-100' : 'opacity-0'
+                                        className={`w-40 h-52 sm:w-48 sm:h-60 md:w-56 md:h-72 lg:w-64 lg:h-80 xl:w-72 xl:h-96 object-cover hover:scale-105 transition-all duration-300 ${loadedImages.has(imageSrc) ? "opacity-100" : "opacity-0"
                                             }`}
                                         onLoad={() => handleImageLoad(imageSrc)}
                                         onError={() => handleImageError(imageSrc)}
@@ -182,7 +182,7 @@ const Media = () => {
                     <button
                         onClick={scrollLeft}
                         disabled={!allImagesLoaded}
-                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? 'opacity-50 cursor-not-allowed' : ''
+                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : ""
                             }`}
                         aria-label="Scroll left"
                     >
@@ -194,7 +194,7 @@ const Media = () => {
                     <button
                         onClick={scrollRight}
                         disabled={!allImagesLoaded}
-                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? 'opacity-50 cursor-not-allowed' : ''
+                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : ""
                             }`}
                         aria-label="Scroll right"
                     >
