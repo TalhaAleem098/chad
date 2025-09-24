@@ -290,9 +290,9 @@ const Page = () => {
           <Bio />
         </section>
 
-        <div className="bg-[#F0EFEA] flex justify-center">< FaCircle size={20} /></div>
+        {/* <div className="bg-[#F0EFEA] flex justify-center">< FaCircle size={20} /></div> */}
 
-        <section
+        {/* <section
           id="contact"
           className="min-h-[60vh] poppins flex items-center justify-center bg-[#F0EFEA] py-12 sm:py-16 lg:py-20"
         >
@@ -318,24 +318,24 @@ const Page = () => {
             </div>
 
           </div>
-        </section>
+        </section> */}
       </main>
 
       <footer className="bg-[#F0EFEA] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3 text-sm sm:text-base">
-            <span>Copyright © 2022 Chad Mathew</span>
+        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="text-center md:text-left text-sm sm:text-base">
+            <span>© 2022 Chad Mathew. All rights reserved.</span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap justify-center md:justify-end gap-3">
             <a
               href="https://www.starnow.com/u/chadmathew/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="StarNow"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors shadow-sm"
             >
-              <FaStar className="w-4 h-4" />
+              <FaStar className="w-5 h-5" />
             </a>
 
             <a
@@ -343,9 +343,9 @@ const Page = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Backstage"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors shadow-sm"
             >
-              <FaUserAlt className="w-4 h-4" />
+              <FaUserAlt className="w-5 h-5" />
             </a>
 
             <a
@@ -353,9 +353,9 @@ const Page = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="CastingApp"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors shadow-sm"
             >
-              <FaGlobe className="w-4 h-4" />
+              <FaGlobe className="w-5 h-5" />
             </a>
 
             <a
@@ -363,9 +363,9 @@ const Page = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="CastingNetworks"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors shadow-sm"
             >
-              <FaNetworkWired className="w-4 h-4" />
+              <FaNetworkWired className="w-5 h-5" />
             </a>
 
             <a
@@ -373,15 +373,14 @@ const Page = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="IMDB"
-              className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white border border-[#0B3D2E]/20 text-[#0B3D2E] hover:bg-[#0B3D2E] hover:text-white transition-colors shadow-sm"
             >
-              <SiImdb className="w-4 h-4" />
+              <SiImdb className="w-5 h-5" />
             </a>
           </div>
-
-          <div className="text-sm sm:text-base">All rights reserved.</div>
         </div>
       </footer>
+
 
     </div>
   );
