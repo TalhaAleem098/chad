@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaInstagram, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaStar, FaUserAlt, FaGlobe, FaNetworkWired, FaEnvelope, FaHeart } from "react-icons/fa";
+import { SiImdb } from "react-icons/si";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,184 +61,172 @@ const Contact = () => {
 
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8">
-      <div className="text-left mb-8 sm:mb-12 lg:mb-16">
+      <div className="text-left mb-6 sm:mb-8 lg:mb-10">
         <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight leading-none">
           CONTACT
         </h1>
       </div>
 
-      <div className="grid poppins grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 max-w-7xl mx-auto">
+      <div className="grid poppins grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
         {/* Left Column - Image and Social Links */}
-        <div className="space-y-8">
-          <div className="relative w-full overflow-hidden rounded-4xl">
+        <div className="space-y-6">
+          <div className="relative w-full overflow-hidden rounded-3xl">
             <Image
               src="/images/img-1.jpeg"
               alt="Chad Mathew"
-              width={600}
-              height={750}
+              width={500}
+              height={600}
               priority
-              className="w-full h-auto object-cover rounded-[60px]"
+              className="w-full h-auto object-cover rounded-3xl"
               style={{
                 aspectRatio: "4/5",
-                maxHeight: "600px",
+                maxHeight: "450px",
               }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 
           {/* Social Links */}
-          <div className="space-y-6">
-            <h2 className="text-2xl sm:text-3xl font-bold">Connect With Me</h2>
-            <div className="space-y-4">
-              <a
-                href="mailto:contact@chadmathew.com"
-                className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/50 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FaEnvelope className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-sm opacity-75">contact@chadmathew.com</p>
-                </div>
-              </a>
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+            <a
+              href="mailto:contact@chadmathew.com"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="Email"
+            >
+              <FaEnvelope className="w-5 h-5" />
+            </a>
 
-              <a
-                href="https://instagram.com/chadmathew"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/50 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FaInstagram className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Instagram</h3>
-                  <p className="text-sm opacity-75">@chadmathew</p>
-                </div>
-              </a>
+            <a
+              href="https://www.starnow.com/u/chadmathew/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="StarNow"
+            >
+              <FaStar className="w-5 h-5" />
+            </a>
 
-              <a
-                href="https://linkedin.com/in/chadmathew"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/50 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FaLinkedin className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">LinkedIn</h3>
-                  <p className="text-sm opacity-75">Chad Mathew</p>
-                </div>
-              </a>
+            <a
+              href="https://www.backstage.com/u/itschadmathew/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="Backstage"
+            >
+              <FaUserAlt className="w-5 h-5" />
+            </a>
 
-              <a
-                href="https://twitter.com/chadmathew"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/50 transition-all duration-300 group"
-              >
-                <div className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <FaTwitter className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Twitter</h3>
-                  <p className="text-sm opacity-75">@chadmathew</p>
-                </div>
-              </a>
-            </div>
+            <a
+              href="https://casting.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="CastingApp"
+            >
+              <FaGlobe className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.castingnetworks.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="CastingNetworks"
+            >
+              <FaNetworkWired className="w-5 h-5" />
+            </a>
+
+            <a
+              href="https://www.imdb.com/name/nm9102781/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-[#0B3D2E] text-white rounded-full flex items-center justify-center hover:bg-[#0B3D2E]/80 hover:scale-110 transition-all duration-300"
+              title="IMDb"
+            >
+              <SiImdb className="w-5 h-5" />
+            </a>
           </div>
         </div>
 
         {/* Right Column - Contact Form */}
-        <div className="space-y-8">
+        <div className="space-y-6">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">Get In Touch</h2>
-            <p className="text-lg opacity-75 leading-relaxed">
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">Get In Touch</h2>
+            <p className="text-sm opacity-75 leading-relaxed">
               Ready to collaborate? Drop me a message and let&apos;s create something amazing together.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold mb-2">
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-[#0B3D2E]/20 rounded-xl focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm"
-                  placeholder="Your full name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border-2 border-[#0B3D2E]/20 rounded-xl focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="block text-sm font-semibold mb-2">
-                Subject *
-              </label>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input
                 type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border-2 border-[#0B3D2E]/20 rounded-xl focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm"
-                placeholder="What&apos;s this about?"
+                className="w-full px-4 py-3 border border-[#0B3D2E]/30 rounded-lg focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/80"
+                placeholder="Your full name *"
+              />
+
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 border border-[#0B3D2E]/30 rounded-lg focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/80"
+                placeholder="your.email@example.com *"
               />
             </div>
 
-            <div>
-              <label htmlFor="message" className="block text-sm font-semibold mb-2">
-                Message *
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={6}
-                className="w-full px-4 py-3 border-2 border-[#0B3D2E]/20 rounded-xl focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm resize-none"
-                placeholder="Tell me about your project, collaboration ideas, or just say hello!"
-              />
-            </div>
+            <input
+              type="text"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-3 border border-[#0B3D2E]/30 rounded-lg focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/80"
+              placeholder="What&apos;s this about? *"
+            />
+
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              rows={4}
+              className="w-full px-4 py-3 border border-[#0B3D2E]/30 rounded-lg focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/80 resize-none"
+              placeholder="Tell me about your project, collaboration ideas, or just say hello! *"
+            />
 
             <button
               type="submit"
-              className="w-full bg-[#0B3D2E] text-white py-4 px-8 rounded-xl font-semibold text-lg hover:bg-[#0B3D2E]/90 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl"
+              className="w-full bg-[#0B3D2E] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#0B3D2E]/90 transition-all duration-300 hover:shadow-lg"
             >
               Send Message
             </button>
           </form>
 
-          <div className="text-center pt-6 border-t border-[#0B3D2E]/20">
-            <p className="text-sm opacity-75">
+          <div className="text-center pt-4 border-t border-[#0B3D2E]/20">
+            <p className="text-xs opacity-75 mb-3">
               I typically respond within 24-48 hours. Looking forward to hearing from you!
             </p>
+            
+            {/* Developer Attribution */}
+            <div className="text-center">
+              <p className="text-xs text-[#0B3D2E]/60 mb-1">
+                Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" /> by{" "}
+                <a
+                  href="https://dev-mateen-rmas.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#0B3D2E] hover:text-[#0B3D2E]/70 transition-colors duration-300"
+                >
+                  Mateen Ahmad
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
