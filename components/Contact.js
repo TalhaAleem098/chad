@@ -62,7 +62,7 @@ const Contact = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8">
       <div className="text-left mb-6 sm:mb-8 lg:mb-10">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight leading-none">
+        <h1 className="text-[23vw] font-druk-xcond font-black leading-none">
           CONTACT
         </h1>
       </div>
@@ -70,17 +70,16 @@ const Contact = () => {
       <div className="grid poppins grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
         {/* Left Column - Image and Social Links */}
         <div className="space-y-6">
-          <div className="relative w-full overflow-hidden rounded-3xl">
+          <div className="relative w-full rounded-3xl">
             <Image
-              src="/images/img-1.jpeg"
+              src="/images/10.webp"
               alt="Chad Mathew"
-              width={500}
-              height={600}
+              width={400}
+              height={640}
               priority
-              className="w-full h-auto object-cover rounded-3xl"
+              className="h-auto rounded-3xl"
               style={{
-                aspectRatio: "4/5",
-                maxHeight: "450px",
+                aspectRatio: "8/12",
               }}
               sizes="(max-width: 1024px) 100vw, 50vw"
             />

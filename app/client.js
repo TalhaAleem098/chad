@@ -10,7 +10,8 @@ import {
   FaUser,
   FaInstagram,
   FaEnvelope,
-  FaCircle
+  FaCircle,
+  FaHeart,
 } from "react-icons/fa";
 import { FaStar, FaUserAlt, FaGlobe, FaNetworkWired } from "react-icons/fa";
 import { SiImdb } from "react-icons/si";
@@ -378,6 +379,19 @@ const Page = () => {
               <SiImdb className="w-5 h-5" />
             </a>
           </div>
+        </div>
+        <div className="text-center">
+          <p className="text-xs text-[#0B3D2E]/60 mb-1">
+            Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" /> by{" "}
+            <a
+              href="https://dev-mateen-rmas.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[#0B3D2E] hover:text-[#0B3D2E]/70 transition-colors duration-300"
+            >
+              Mateen Ahmad
+            </a>
+          </p>
         </div>
       </footer>
 
