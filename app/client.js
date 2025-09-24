@@ -325,7 +325,7 @@ const Page = () => {
       <footer className="bg-[#F0EFEA] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-sm sm:text-base">
-            <span>© 2022 Chad Mathew. All rights reserved.</span>
+            <span>© 2025 Chad Mathew. All rights reserved.</span>
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-3">
