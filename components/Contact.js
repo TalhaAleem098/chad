@@ -35,7 +35,7 @@ const Contact = () => {
       formSubmitData.append("_captcha", "false"); 
       formSubmitData.append("_template", "table"); 
 
-      const response = await fetch("https://formsubmit.co/aleemtalha098@gmail.com", {
+      const response = await fetch("https://formsubmit.co/contact@chadmathew.com", {
         method: "POST",
         body: formSubmitData
       });
