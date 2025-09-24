@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { FaInstagram, FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React, { useState } from "react";
+import Image from "next/image";
+import { FaInstagram, FaEnvelope, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
   });
 
   const handleChange = (e) => {
@@ -27,31 +27,31 @@ const Contact = () => {
 
     try {
       const formSubmitData = new FormData();
-      formSubmitData.append('name', formData.name);
-      formSubmitData.append('email', formData.email);
-      formSubmitData.append('subject', formData.subject);
-      formSubmitData.append('message', formData.message);
-      formSubmitData.append('_subject', `New contact form submission from ${formData.name}`);
-      formSubmitData.append('_captcha', 'false'); 
-      formSubmitData.append('_template', 'table'); 
+      formSubmitData.append("name", formData.name);
+      formSubmitData.append("email", formData.email);
+      formSubmitData.append("subject", formData.subject);
+      formSubmitData.append("message", formData.message);
+      formSubmitData.append("_subject", `New contact form submission from ${formData.name}`);
+      formSubmitData.append("_captcha", "false"); 
+      formSubmitData.append("_template", "table"); 
 
-      const response = await fetch('https://formsubmit.co/contact@chadmathew.com', {
-        method: 'POST',
+      const response = await fetch("https://formsubmit.co/contact@chadmathew.com", {
+        method: "POST",
         body: formSubmitData
       });
 
       if (response.ok) {
-        alert("Message Sent Successfully! Thank you for your interest. We'll get back to you soon!");
+        alert("Message Sent Successfully! Thank you for your interest. We&apos;ll get back to you soon!");
 
         // Reset form
         setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
+          name: "",
+          email: "",
+          subject: "",
+          message: ""
         });
       } else {
-        throw new Error('Failed to send message');
+        throw new Error("Failed to send message");
       }
     } catch (error) {
       alert("Failed to send message. Please try again or contact us directly.");

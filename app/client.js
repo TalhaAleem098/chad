@@ -2,7 +2,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 import {
   FaHome,
   FaFilm,
@@ -12,8 +12,8 @@ import {
   FaEnvelope,
   FaCircle
 } from "react-icons/fa";
-import { FaStar, FaUserAlt, FaGlobe, FaNetworkWired } from 'react-icons/fa';
-import { SiImdb } from 'react-icons/si';
+import { FaStar, FaUserAlt, FaGlobe, FaNetworkWired } from "react-icons/fa";
+import { SiImdb } from "react-icons/si";
 import FilmTV from "@/components/FilmTV";
 import Media from "@/components/Media";
 import Bio from "@/components/Bio";
@@ -92,8 +92,8 @@ const Page = () => {
   }, [isMobileMenuOpen]);
 
   useEffect(() => {
-    if (pathname === '/contact') {
-      setActiveSection('contact');
+    if (pathname === "/contact") {
+      setActiveSection("contact");
     }
   }, [pathname]);
 
@@ -117,8 +117,8 @@ const Page = () => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start"
       });
     }
   };
@@ -240,7 +240,7 @@ const Page = () => {
       </nav>
 
       <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-10 lg:pt-20 justify-center h-[65vh] z-0 pointer-events-none">
-        <h1 className="text-[42vw] font-druk-xcond text-center leading-none">
+        <h1 className="text-[42vw] lg:text-[38vw] font-druk-xcond text-center leading-none">
           CHAD MATHEW
         </h1>
       </div>
@@ -253,19 +253,15 @@ const Page = () => {
           <div className="relative w-full flex justify-center">
             <div className="absolute -top-12 sm:-top-10 lg:-top-12">
               <Image
-                src="/images/img-1.jpeg"
+                src="/images/10.webp"
                 alt="Model"
                 width={800}
                 height={1000}
                 priority
-                className="rounded-4xl shadow-lg object-cover w-[75vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto"
-                style={{
-                  aspectRatio: "4/5",
-                  maxHeight: "100vh",
-                  minHeight: "380px",
-                }}
+                className="rounded-4xl shadow-lg object-cover w-[75vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto aspect-[5/8]"
                 sizes="(max-width: 640px) 85vw, (max-width: 768px) 70vw, (max-width: 1024px) 50vw, 40vw"
               />
+
             </div>
           </div>
         </section>

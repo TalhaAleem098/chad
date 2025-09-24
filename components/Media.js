@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const Media = () => {
     const [imageLoadErrors, setImageLoadErrors] = useState({});
@@ -8,27 +8,9 @@ const Media = () => {
     const scrollContainerRef = useRef(null);
     const [isAutoScrolling, setIsAutoScrolling] = useState(false);
 
-    const mainImage = "/images/image7.jpeg";
+    const mainImage = "/images/17.webp";
 
-    const galleryImages = [
-        "/images/carousel/1.jpeg",
-        "/images/carousel/2.jpeg",
-        "/images/carousel/3.JPG",
-        "/images/carousel/4.jpeg",
-        "/images/carousel/5.jpg",
-        "/images/carousel/6.jpg",
-        "/images/carousel/7.JPG",
-        "/images/carousel/8.jpg",
-        "/images/carousel/9.jpeg",
-        "/images/carousel/10.jpeg",
-        "/images/carousel/11.jpeg",
-        "/images/carousel/12.jpeg",
-        "/images/carousel/13.jpeg",
-        "/images/carousel/14.jpeg",
-        "/images/carousel/15.jpeg",
-        "/images/carousel/16.JPG",
-        "/images/carousel/17.jpeg"
-    ];
+    const galleryImages = Array.from({ length: 17 }, (_, i) => `/images/${i + 1}.webp`);
 
     const duplicatedImages = [...galleryImages, ...galleryImages];
 
@@ -160,7 +142,7 @@ const Media = () => {
                     onMouseEnter={() => setIsAutoScrolling(false)}
                     onMouseLeave={() => setIsAutoScrolling(true)}
                 >
-                    <div className="flex gap-4 sm:gap-6 lg:gap-8 pb-4">
+                <div className="flex gap-4 sm:gap-6 lg:gap-8 pb-4">
                         {duplicatedImages.map((imageSrc, index) => (
                             <div
                                 key={index}
