@@ -36,7 +36,10 @@ const Page = () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
           current = section.getAttribute("id");
         }
       });
@@ -119,18 +122,21 @@ const Page = () => {
     if (section) {
       section.scrollIntoView({
         behavior: "smooth",
-        block: "start"
+        block: "start",
       });
     }
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[#F0EFEA] text-[#0a2f23]">
-      <nav className="fixed top-0 inset-x-0 bg-[#F0EFEA] backdrop-blur-lg z-50">
+    <div className="relative min-h-screen overflow-hidden bg-[#E5DCCF] text-[#0a2f23]">
+      <nav className="fixed top-0 inset-x-0 bg-[#F0EFEA] border-b backdrop-blur-lg z-50">
         <div className="hidden lg:flex max-w-7xl mx-auto px-3 h-12 items-center justify-center">
           <div className="flex items-center justify-between w-full">
             {navLinks.map((link) => {
-              const isActive = link.id === "contact" ? pathname === "/contact" : activeSection === link.id;
+              const isActive =
+                link.id === "contact"
+                  ? pathname === "/contact"
+                  : activeSection === link.id;
               if (link.id === "contact") {
                 return (
                   <Link
@@ -139,9 +145,13 @@ const Page = () => {
                     className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200`}
                   >
                     <FaCircle
-                      className={`w-4 h-4 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0"}`}
+                      className={`w-4 h-4 transition-opacity duration-200 ${
+                        isActive ? "opacity-100" : "opacity-0"
+                      }`}
                     />
-                    <span className="font-extrabold text-[1.5vw]">{link.label}</span>
+                    <span className="font-extrabold text-[1.5vw]">
+                      {link.label}
+                    </span>
                   </Link>
                 );
               }
@@ -154,9 +164,13 @@ const Page = () => {
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200`}
                 >
                   <FaCircle
-                    className={`w-4 h-4 transition-opacity duration-200 ${isActive ? "opacity-100" : "opacity-0"}`}
+                    className={`w-4 h-4 transition-opacity duration-200 ${
+                      isActive ? "opacity-100" : "opacity-0"
+                    }`}
                   />
-                  <span className="font-extrabold text-[1.5vw]">{link.label}</span>
+                  <span className="font-extrabold text-[1.5vw]">
+                    {link.label}
+                  </span>
                 </a>
               );
             })}
@@ -165,7 +179,9 @@ const Page = () => {
 
         <div className="lg:hidden">
           <div className="px-4 h-11 flex items-center justify-between">
-            <span className="text-[12px] lg:text-[19px] font-bold">CHAD MATHEW</span>
+            <span className="text-[12px] lg:text-[19px] font-bold">
+              CHAD MATHEW
+            </span>
 
             <button
               ref={buttonRef}
@@ -175,40 +191,50 @@ const Page = () => {
             >
               <div className="w-5 h-5 relative">
                 <span
-                  className={`absolute left-0 top-0 w-5 h-0.5 bg-current transition-transform duration-300 ${isMobileMenuOpen ? "rotate-45 top-2" : "top-1"
-                    }`}
+                  className={`absolute left-0 top-0 w-5 h-0.5 bg-current transition-transform duration-300 ${
+                    isMobileMenuOpen ? "rotate-45 top-2" : "top-1"
+                  }`}
                 />
                 <span
-                  className={`absolute left-0 top-2 w-5 h-0.5 bg-current transition-opacity duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"
-                    }`}
+                  className={`absolute left-0 top-2 w-5 h-0.5 bg-current transition-opacity duration-300 ${
+                    isMobileMenuOpen ? "opacity-0" : "opacity-100"
+                  }`}
                 />
                 <span
-                  className={`absolute left-0 w-5 h-0.5 bg-current transition-transform duration-300 ${isMobileMenuOpen ? "-rotate-45 top-2" : "top-3.5"
-                    }`}
+                  className={`absolute left-0 w-5 h-0.5 bg-current transition-transform duration-300 ${
+                    isMobileMenuOpen ? "-rotate-45 top-2" : "top-3.5"
+                  }`}
                 />
               </div>
             </button>
-
           </div>
 
           <div
             ref={menuRef}
-            className={`absolute top-full left-0 right-0 transition-all duration-300 transform ${isMobileMenuOpen
-              ? "opacity-100 translate-y-0 pointer-events-auto"
-              : "opacity-0 -translate-y-4 pointer-events-none"
-              }`}
+            className={`absolute top-full left-0 right-0 transition-all duration-300 transform ${
+              isMobileMenuOpen
+                ? "opacity-100 translate-y-0 pointer-events-auto"
+                : "opacity-0 -translate-y-4 pointer-events-none"
+            }`}
           >
             <div className="bg-white/98 backdrop-blur-xl shadow-xl border-t border-gray-200">
               <div className="px-4 py-3 space-y-1">
                 {navLinks.map((link) => {
-                  const isActive = link.id === "contact" ? pathname === "/contact" : activeSection === link.id;
+                  const isActive =
+                    link.id === "contact"
+                      ? pathname === "/contact"
+                      : activeSection === link.id;
                   if (link.id === "contact") {
                     return (
                       <Link
                         key={link.id}
                         href="/contact"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${isActive ? "bg-[#0B3D2E] text-white shadow-md" : "hover:bg-gray-100"}`}
+                        className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
+                          isActive
+                            ? "bg-[#0B3D2E] text-white shadow-md"
+                            : "hover:bg-gray-100"
+                        }`}
                       >
                         {link.label}
                       </Link>
@@ -220,7 +246,11 @@ const Page = () => {
                       key={link.id}
                       href={`#${link.id}`}
                       onClick={(e) => handleLinkClick(e, link.id)}
-                      className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${isActive ? "bg-[#0B3D2E] text-white shadow-md" : "hover:bg-gray-100"}`}
+                      className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
+                        isActive
+                          ? "bg-[#0B3D2E] text-white shadow-md"
+                          : "hover:bg-gray-100"
+                      }`}
                     >
                       {link.label}
                     </a>
@@ -231,7 +261,6 @@ const Page = () => {
           </div>
         </div>
 
-
         {isMobileMenuOpen && (
           <div
             className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-[-1]"
@@ -240,7 +269,7 @@ const Page = () => {
         )}
       </nav>
 
-      <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-10 lg:pt-20 justify-center h-[65vh] z-0 pointer-events-none">
+      <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[65vh] z-0 pointer-events-none">
         <h1 className="text-[42vw] lg:text-[38vw] font-druk-xcond text-center leading-none">
           CHAD MATHEW
         </h1>
@@ -252,23 +281,21 @@ const Page = () => {
           className="relative md:min-h-screen min-h-[60vh] flex items-center justify-center"
         >
           <div className="relative w-full flex justify-center">
-            <div className="absolute -top-12 sm:-top-10 lg:-top-12">
+            <div className="absolute -top-14 sm:-top-10 lg:-top-12">
               <Image
-                src="/images/10.webp"
+                src="/images/main.webp"
                 alt="Model"
                 width={800}
                 height={1000}
                 priority
-                className="rounded-4xl shadow-lg object-cover w-[75vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto aspect-[5/8]"
+                className="rounded-4xl shadow-lg object-cover object-top w-[82vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto aspect-[7/8]"
                 sizes="(max-width: 640px) 85vw, (max-width: 768px) 70vw, (max-width: 1024px) 50vw, 40vw"
               />
-
             </div>
           </div>
         </section>
 
-        <section className="min-h-[20vh] bg-[#F0EFEA] flex items-center justify-center">
-        </section>
+        <section className="min-h-[15vh] md:min-h-[20vh] bg-[#F0EFEA] flex items-center justify-center"></section>
 
         <section
           id="film-tv"
@@ -382,7 +409,8 @@ const Page = () => {
         </div>
         <div className="text-center">
           <p className="text-xs text-[#0B3D2E]/60 mb-1">
-            Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" /> by{" "}
+            Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
+            by{" "}
             <a
               href="https://dev-mateen-rmas.vercel.app/"
               target="_blank"
@@ -394,8 +422,6 @@ const Page = () => {
           </p>
         </div>
       </footer>
-
-
     </div>
   );
 };

@@ -50,13 +50,13 @@ const FilmTV = () => {
 
   return (
     <div className="w-full px-6">
-      <div className="text-left flex mb-8 sm:mt-12 lg:mt-16 lg:pt-20 text-[27vw] md:text-[12em] font-druk-xcond">
+      <div className="text-left flex sm:mt-12 lg:mt-16 lg:pt-20 text-[27vw] md:text-[12em] font-druk-xcond">
         <h1 className="flex items-center gap-2 font-extrabold">
           FILM <span className="text-[27vw] md:text-[1.2em] ">/</span> TV
         </h1>
       </div>
 
-      <div className="space-y-0">
+      <div className="space-y-0 ">
         {films.map((film, index) => (
           <div key={index} className="group">
             <a
@@ -66,8 +66,10 @@ const FilmTV = () => {
               className="block w-full transition-all duration-300 ease-in-out hover:bg-gray-50 hover:shadow-lg"
             >
               <div className="border-b border-current py-2 transition-colors duration-300">
-                <h2 className="text-[6vw] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold transition-colors duration-300 leading-tight">
-                  {film.title}
+                <h2 className="text-[5vw] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold transition-colors duration-300 leading-tight"
+                // style={{lineHeight: "5.9vw"}}
+                >
+                  {film.title.toUpperCase()}
                 </h2>
               </div>
             </a>
