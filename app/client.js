@@ -103,7 +103,7 @@ const Page = () => {
 
   const navLinks = [
     { id: "home", label: "HOME", icon: FaHome },
-    { id: "film-tv", label: "FILM & TV", icon: FaFilm },
+    { id: "film-tv", label: "FILM&TV", icon: FaFilm },
     { id: "media", label: "MEDIA", icon: FaCamera },
     { id: "bio", label: "BIO", icon: FaUser },
     { id: "contact", label: "CONTACT", icon: FaEnvelope },
@@ -129,27 +129,28 @@ const Page = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#E5DCCF] text-[#0a2f23]">
-      <nav className="fixed top-0 inset-x-0 bg-[#F0EFEA] border-b backdrop-blur-lg z-50">
-        <div className="hidden lg:flex max-w-7xl mx-auto px-3 h-12 items-center justify-center">
+      <nav className="fixed top-0 inset-x-0 bg-[#E5DCCF] backdrop-blur-lg z-50">
+        <div className="flex px-1 h-12 items-center justify-center">
           <div className="flex items-center justify-between w-full">
             {navLinks.map((link) => {
               const isActive =
                 link.id === "contact"
                   ? pathname === "/contact"
                   : activeSection === link.id;
+
               if (link.id === "contact") {
                 return (
                   <Link
                     key={link.id}
                     href="/contact"
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200`}
+                    className="flex items-center gap-2 px-0.5 py-1 sm:px-4 sm:py-2 rounded-lg text-xs font-medium transition-all duration-200"
                   >
                     <FaCircle
-                      className={`w-4 h-4 transition-opacity duration-200 ${
+                      className={`w-2.5 h-2.5 sm:w-4 sm:h-4 transition-opacity duration-200 ${
                         isActive ? "opacity-100" : "opacity-0"
                       }`}
                     />
-                    <span className="font-extrabold text-[1.5vw]">
+                    <span className="font-extrabold text-[10px] sm:text-sm lg:text-[1.5vw] leading-none">
                       {link.label}
                     </span>
                   </Link>
@@ -161,14 +162,14 @@ const Page = () => {
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={(e) => handleLinkClick(e, link.id)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200`}
+                  className="flex items-center gap-0.5 px-2 py-1 sm:px-4 sm:py-2 rounded-lg text-xs font-medium transition-all duration-200"
                 >
                   <FaCircle
-                    className={`w-4 h-4 transition-opacity duration-200 ${
+                    className={`w-1.5 h-1.5 sm:w-4 sm:h-4 transition-opacity duration-200 ${
                       isActive ? "opacity-100" : "opacity-0"
                     }`}
                   />
-                  <span className="font-extrabold text-[1.5vw]">
+                  <span className="font-extrabold text-[10px] sm:text-sm lg:text-[1.5vw] leading-none">
                     {link.label}
                   </span>
                 </a>
@@ -176,100 +177,9 @@ const Page = () => {
             })}
           </div>
         </div>
-
-        <div className="lg:hidden">
-          <div className="px-4 h-11 flex items-center justify-between">
-            <span className="text-[12px] lg:text-[19px] font-bold">
-              CHAD MATHEW
-            </span>
-
-            <button
-              ref={buttonRef}
-              onClick={toggleMobileMenu}
-              className="relative flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors duration-200 w-10 h-10"
-              aria-label="Toggle menu"
-            >
-              <div className="w-5 h-5 relative">
-                <span
-                  className={`absolute left-0 top-0 w-5 h-0.5 bg-current transition-transform duration-300 ${
-                    isMobileMenuOpen ? "rotate-45 top-2" : "top-1"
-                  }`}
-                />
-                <span
-                  className={`absolute left-0 top-2 w-5 h-0.5 bg-current transition-opacity duration-300 ${
-                    isMobileMenuOpen ? "opacity-0" : "opacity-100"
-                  }`}
-                />
-                <span
-                  className={`absolute left-0 w-5 h-0.5 bg-current transition-transform duration-300 ${
-                    isMobileMenuOpen ? "-rotate-45 top-2" : "top-3.5"
-                  }`}
-                />
-              </div>
-            </button>
-          </div>
-
-          <div
-            ref={menuRef}
-            className={`absolute top-full left-0 right-0 transition-all duration-300 transform ${
-              isMobileMenuOpen
-                ? "opacity-100 translate-y-0 pointer-events-auto"
-                : "opacity-0 -translate-y-4 pointer-events-none"
-            }`}
-          >
-            <div className="bg-white/98 backdrop-blur-xl shadow-xl border-t border-gray-200">
-              <div className="px-4 py-3 space-y-1">
-                {navLinks.map((link) => {
-                  const isActive =
-                    link.id === "contact"
-                      ? pathname === "/contact"
-                      : activeSection === link.id;
-                  if (link.id === "contact") {
-                    return (
-                      <Link
-                        key={link.id}
-                        href="/contact"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
-                          isActive
-                            ? "bg-[#0B3D2E] text-white shadow-md"
-                            : "hover:bg-gray-100"
-                        }`}
-                      >
-                        {link.label}
-                      </Link>
-                    );
-                  }
-
-                  return (
-                    <a
-                      key={link.id}
-                      href={`#${link.id}`}
-                      onClick={(e) => handleLinkClick(e, link.id)}
-                      className={`flex px-4 py-3 rounded-xl text-base font-medium transition-all duration-200 ${
-                        isActive
-                          ? "bg-[#0B3D2E] text-white shadow-md"
-                          : "hover:bg-gray-100"
-                      }`}
-                    >
-                      {link.label}
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {isMobileMenuOpen && (
-          <div
-            className="lg:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-[-1]"
-            onClick={() => setIsMobileMenuOpen(false)}
-          />
-        )}
       </nav>
 
-      <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[65vh] z-0 pointer-events-none">
+      <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[350px] z-0 pointer-events-none">
         <h1 className="text-[42vw] lg:text-[38vw] font-druk-xcond text-center leading-none">
           CHAD MATHEW
         </h1>
@@ -278,51 +188,51 @@ const Page = () => {
       <main className="relative z-10 bg-transparent">
         <section
           id="home"
-          className="relative md:min-h-screen min-h-[60vh] flex items-center justify-center"
+          className="relative md:min-h-screen min-h-[400px] flex items-center justify-center"
         >
           <div className="relative w-full flex justify-center">
-            <div className="absolute -top-14 sm:-top-10 lg:-top-12">
+            <div className="absolute -top-[65px] sm:-top-10 lg:-top-12">
               <Image
                 src="/images/main.webp"
                 alt="Model"
                 width={800}
                 height={1000}
                 priority
-                className="rounded-4xl shadow-lg object-cover object-top w-[82vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto aspect-[7/8]"
+                className="rounded-[70px] shadow-lg object-cover object-top w-[82vw] sm:w-[70vw] md:w-[50vw] lg:w-[40vw] h-auto aspect-[7/8]"
                 sizes="(max-width: 640px) 85vw, (max-width: 768px) 70vw, (max-width: 1024px) 50vw, 40vw"
               />
             </div>
           </div>
         </section>
 
-        <section className="min-h-[15vh] md:min-h-[20vh] bg-[#F0EFEA] flex items-center justify-center"></section>
+        <section className="min-h-[15vh] md:min-h-[20vh] bg-[#E5DCCF] flex items-center justify-center"></section>
 
         <section
           id="film-tv"
-          className="min-h-screen bg-[#F0EFEA] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
+          className="min-h-screen bg-[#E5DCCF] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
         >
           <FilmTV />
         </section>
 
         <section
           id="media"
-          className="min-h-screen bg-[#F0EFEA] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
+          className="min-h-screen bg-[#E5DCCF] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
         >
           <Media />
         </section>
 
         <section
           id="bio"
-          className="min-h-screen bg-[#F0EFEA] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
+          className="min-h-screen bg-[#E5DCCF] flex flex-col items-center justify-start py-12 sm:py-16 lg:py-20"
         >
           <Bio />
         </section>
 
-        {/* <div className="bg-[#F0EFEA] flex justify-center">< FaCircle size={20} /></div> */}
+        {/* <div className="bg-[#E5DCCF] flex justify-center">< FaCircle size={20} /></div> */}
 
         {/* <section
           id="contact"
-          className="min-h-[60vh] poppins flex items-center justify-center bg-[#F0EFEA] py-12 sm:py-16 lg:py-20"
+          className="min-h-[60vh] poppins flex items-center justify-center bg-[#E5DCCF] py-12 sm:py-16 lg:py-20"
         >
 
           <div className="text-center w-full mx-auto px-6">
@@ -349,7 +259,7 @@ const Page = () => {
         </section> */}
       </main>
 
-      <footer className="bg-[#F0EFEA] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
+      <footer className="bg-[#E5DCCF] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-sm sm:text-base">
             <span>© 2025 Chad Mathew. All rights reserved.</span>

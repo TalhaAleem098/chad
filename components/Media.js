@@ -1,3 +1,6 @@
+
+"use client"
+import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
@@ -116,7 +119,7 @@ const Media = () => {
                         width={1200}
                         height={800}
                         priority
-                        className="w-full hover:scale-101 cursor-pointer transition h-auto object-cover rounded-[60px] "
+                        className="w-full hover:scale-101 cursor-pointer transition h-auto object-cover rounded-[20px] md:rounded-[40px] lg:rounded-[60px] "
                         onError={() => handleImageError(mainImage)}
                         sizes="100vw"
                     />
@@ -178,29 +181,25 @@ const Media = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-between gap-4">
+                <div className="flex justify-between gap-6 mt-6">
                     <button
                         onClick={scrollLeft}
                         disabled={!allImagesLoaded}
-                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : ""
+                        className={`rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : "hover:-translate-y-1"
                             }`}
                         aria-label="Scroll left"
                     >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-                        </svg>
+                        <FaChevronCircleLeft className="w-10 h-10" />
                     </button>
 
                     <button
                         onClick={scrollRight}
                         disabled={!allImagesLoaded}
-                        className={`bg-[#0B3D2E] hover:bg-[#0B3D2E]/80 text-white p-3 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : ""
+                        className={` rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 ${!allImagesLoaded ? "opacity-50 cursor-not-allowed" : "hover:-translate-y-1"
                             }`}
                         aria-label="Scroll right"
                     >
-                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                        <FaChevronCircleRight className="w-10 h-10" />
                     </button>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto poppins">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto poppins font-bold">
         {/* Column 1 */}
         <div className="text-sm sm:text-base leading-relaxed">
           <p className="mb-6">
