@@ -179,7 +179,7 @@ const Page = () => {
         </div>
       </nav>
 
-      <div className="fixed inset-x-0 top-10 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[350px] z-0 pointer-events-none">
+      <div className="fixed inset-x-0 top-10 md:top-30 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[350px] z-0 pointer-events-none">
         <h1 className="text-[42vw] lg:text-[38vw] font-druk-xcond text-center leading-none">
           CHAD MATHEW
         </h1>
@@ -260,12 +260,15 @@ const Page = () => {
       </main>
 
       <footer className="bg-[#E5DCCF] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-sm sm:text-base">
             <span>© 2025 Chad Mathew. All rights reserved.</span>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-end gap-3">
+
+          <a href="mailto:contact@chadmathew.com">contact@chadmathew.com</a>
+
+          {/* <div className="flex flex-wrap justify-center md:justify-end gap-3">
             <a
               href="https://www.starnow.com/u/chadmathew/"
               target="_blank"
@@ -315,7 +318,7 @@ const Page = () => {
             >
               <SiImdb className="w-5 h-5" />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="text-center">
           <p className="text-xs text-[#0B3D2E]/60 mb-1">

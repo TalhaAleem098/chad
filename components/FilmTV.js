@@ -87,7 +87,7 @@ const FilmTV = () => {
       </a>
 
       {/* Social Media Links */}
-      <div className="mt-8 border-t pt-6">
+      <div className="mt-8 pt-6">
         <div className="flex gap-4">
           {/* Instagram */}
           <a
