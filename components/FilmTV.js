@@ -78,7 +78,7 @@ const FilmTV = () => {
         ))}
       </div>
       <a
-        href="/uploads/cv.docx"
+        href="/uploads/cv.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 inline-block rounded-md bg-[#0B3D2E] text-white py-2 px-4 text-sm hover:opacity-90"
