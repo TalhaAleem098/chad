@@ -190,7 +190,7 @@ const Media = () => {
                 )} */}
 
         <div
-        //   ref={scrollContainerRef}
+          ref={scrollContainerRef}
           className="overflow-x-auto scrollbar-hide"
           onMouseEnter={() => setIsAutoScrolling(false)}
           onMouseLeave={() => setIsAutoScrolling(true)}
