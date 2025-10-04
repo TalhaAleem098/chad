@@ -1,13 +1,13 @@
 
 const mainClass = "w-full px-4 sm:px-6 lg:px-8 py-6 text-gray-900 leading-relaxed text-sm sm:text-sm md:text-base poppins";
 const headingStyle = { color: '#0B3D2E' };
-const heading = "font-druk-xcond mt-5 mb-2 tracking-wide text-[20vw] lg:text-[7em] font-semibold";
+const heading = "font-druk-xcond mt-5 mb-2 text-[15vw] md:text-[20vw] lg:text-[7em] font-semibold";
 const sectionClass = "mb-4";
 const sectionLastClass = "mb-8";
 const listClass = "poppins list-disc ml-5 sm:ml-6 md:ml-8 space-y-1";
 const listItemClass = "break-words";
 const titleSpan = "title-span font-druk-wide font-semibold text-[#0B3D2E]";
-const wideSpan = "wide-span font-druk-wide";
+const wideSpan = "wide-span font-druk-wide text-base";
 
 export default function CVContent() {
   return (

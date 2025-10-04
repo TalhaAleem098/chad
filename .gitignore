@@ -6,8 +6,6 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-/public/
-/app/
 /coverage
 /.next/
 /out/

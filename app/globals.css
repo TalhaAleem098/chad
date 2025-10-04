@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Druk Wide Medium';
+  src: url('/font/fonnts.com-Druk_Wide_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DrukXCond Super';
+  src: url('/font/DrukXCond-Super-Trial.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-druk-wide: 'Druk Wide Medium', sans-serif;
+  --font-druk-xcond: 'DrukXCond Super', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+/* Enable smooth scrolling globally */
+html {
+  scroll-behavior: smooth;
+  background-color: #F0EFEA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #000000;
+  }
+}
+
+.font-druk-wide {
+  font-family: var(--font-druk-wide);
+}
+
+.font-druk-xcond {
+  font-family: var(--font-druk-xcond);
+}
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+
+/* Hero background is applied inline in `app/page.js` via style attribute.
+  Keep any page-specific background settings there to ensure the correct image path. */
