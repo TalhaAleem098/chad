@@ -1,44 +1,25 @@
 @import "tailwindcss";
 
-/*
-  Multiple @font-face entries below provide explicit weights for the Druk families.
-  Browsers will try to load the exact-weight font first. If a specific weight file
-  can't be loaded, the browser will use the nearest available weight of the same
-  family before falling back to the system fonts declared in the --font-... stacks.
-*/
-
-/* Druk Wide (medium / regular) - prefer the bundled medium file, also usable as nearby weights */
 @font-face {
-  font-family: 'Druk Wide';
-  src: local('Druk Wide Medium'), url('/font/fonnts.com-Druk_Wide_Medium.ttf') format('truetype');
-  font-weight: 400 600; /* treat this file as usable for normal through medium weights */
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Druk Condensed family - multiple weights mapped to available files so the browser
-   can choose the closest weight if the requested one isn't available. */
-@font-face {
-  font-family: 'DrukXCond';
-  src: local('DrukXCond Super'), url('/font/DrukXCond-Super-Trial.otf') format('opentype');
-  font-weight: 800 900; /* heavier / super weights */
+  font-family: 'Druk Wide Medium';
+  src: url('/font/fonnts.com-Druk_Wide_Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'DrukXCond';
-  src: local('Druk Cond Super'), url('/font/DrukCond-Super-Trial.otf') format('opentype');
-  font-weight: 400 700; /* regular to bold-ish weights */
+  font-family: 'DrukXCond Super';
+  src: url('/font/DrukXCond-Super-Trial.otf') format('opentype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  /* Font stacks: try local/embedded Druk faces first, then fall back to system fonts */
-  --font-druk-wide: 'Druk Wide', 'Druk Wide Medium', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-druk-xcond: 'DrukXCond', 'DrukXCond Super', 'Druk Cond', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-poppins: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-druk-wide: 'Druk Wide Medium', sans-serif;
+  --font-druk-xcond: 'DrukXCond Super', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 }
 
 /* Enable smooth scrolling globally */
@@ -48,7 +29,7 @@ html {
   font-family: var(--font-druk-wide);
 }
 
-:root {
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 }
