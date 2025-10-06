@@ -249,7 +249,7 @@ const Page = () => {
 
         {/* <section
           id="contact"
-          className="min-h-[60vh] poppins flex items-center justify-center bg-[#E5DCCF] py-12 sm:py-16 lg:py-20"
+          className="min-h-[60vh] flex items-center justify-center bg-[#E5DCCF] py-12 sm:py-16 lg:py-20"
         >
 
           <div className="text-center w-full mx-auto px-6">
@@ -276,7 +276,7 @@ const Page = () => {
         </section> */}
       </main>
 
-      <footer className="bg-[#E5DCCF] poppins text-[#0B3D2E] border-t border-[#0B3D2E]/10">
+      <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left text-sm sm:text-base">
             <span>© 2025 Chad Mathew. All rights reserved.</span>

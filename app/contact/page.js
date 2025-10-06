@@ -21,7 +21,7 @@ const ContactPage = () => {
     <div className="min-h-screen bg-[#E5DCCF] text-[#0B3D2E]">
       {/* Header with back button */}
       <header 
-        className="sticky  poppins top-0 bg-[#E5DCCF]/95 backdrop-blur-lg z-50"
+        className="sticky top-0 bg-[#E5DCCF]/95 backdrop-blur-lg z-50"
         data-aos="fade-down"
         data-aos-duration="600"
       >

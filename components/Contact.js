@@ -96,7 +96,7 @@ const Contact = () => {
         </h1>
       </div>
 
-      <div className="grid poppins grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
         {/* Left Column - Image and Social Links */}
         <div
           className="space-y-6"

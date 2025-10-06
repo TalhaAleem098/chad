@@ -13,7 +13,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 lg:gap-12 max-w-7xl mx-auto poppins font-bold">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 lg:gap-12 max-w-7xl mx-auto font-bold">
         <div
           className="text-sm sm:text-base leading-relaxed"
           data-aos="fade-up"

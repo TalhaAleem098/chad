@@ -8,7 +8,7 @@ export default function ResumePage() {
       <div 
         className="pdf-content"
         style={{
-          fontFamily: 'Poppins, sans-serif',
+          fontFamily: 'var(--font-druk-wide), Helvetica Neue, Arial, sans-serif',
           backgroundColor: '#E5DCCF',
           color: '#1f2937',
           lineHeight: '1.6'

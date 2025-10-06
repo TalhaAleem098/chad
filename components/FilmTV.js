@@ -56,7 +56,7 @@ const FilmTV = () => {
         data-aos-duration="800"
       >
         <h1 className="flex items-center gap-2 font-extrabold leading-none">
-          FILM <span className="text-[27vw] poppins md:text-[1.05em]">&</span> TV
+          FILM <span className="text-[27vw] md:text-[1.05em]">&</span> TV
         </h1>
       </div>
 
