@@ -1,30 +1,65 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { Poppins } from "next/font/google";
-import Head from "next/head";
 
-const druk = localFont({
-  src: "./fonts/fonnts.com-Druk_Wide_Medium.ttf",
+// Druk Wide Medium - Primary/Default Font
+const drukWide = localFont({
+  src: [
+    {
+      path: "../public/font/fonnts.com-Druk_Wide_Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
   variable: "--font-druk-wide",
-  display: "swap",
+  display: "block",
+  preload: true,
+  fallback: ["Helvetica Neue", "Arial", "sans-serif"],
+  adjustFontFallback: false,
 });
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
+// DrukXCond Super - Secondary Font
+const drukXCond = localFont({
+  src: [
+    {
+      path: "../public/font/DrukXCond-Super-Trial.otf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  variable: "--font-druk-xcond",
+  display: "block",
+  preload: true,
+  fallback: ["Helvetica Neue", "Arial", "sans-serif"],
+  adjustFontFallback: false,
+});
+
+// Metadata export for Next.js App Router
+export const metadata = {
+  title: "Chad Mathew | Official Website",
+  description: "Chad Mathew is a talented personality known as a model, anchor, and rising star. His work and presence reflect creativity and style. This website is designed and developed by Talha Aleem from AleemTalha.com, showcasing professional and modern web development.",
+  keywords: "Chad Mathew, Chad Mathew model, Chad Mathew anchor, Chad Mathew official, Chad Mathew star, Chad Mathew portfolio, Talha Aleem developer, AleemTalha.com, React developer, Next.js developer, full stack developer, professional website development",
+  authors: [{ name: "Talha Aleem", url: "https://aleemtalha.com" }],
+  creator: "Talha Aleem",
+  publisher: "Talha Aleem",
+  formatDetection: {
+    telephone: false,
+  },
+  openGraph: {
+    title: "Chad Mathew | Official Website",
+    description: "Chad Mathew - Model, Anchor, and Rising Star",
+    url: "https://www.chadmathew.com",
+    siteName: "Chad Mathew",
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Head>
-        <title>Chad Mathew | Official Website</title>
-        <meta
-          name="description"
-          content="Chad Mathew is a talented personality known as a model, anchor, and rising star. His work and presence reflect creativity and style. This website is designed and developed by Talha Aleem from AleemTalha.com, showcasing professional and modern web development."
-        />
-        <meta
-          name="keywords"
-          content="Chad Mathew, Chad Mathew model, Chad Mathew anchor, Chad Mathew official, Chad Mathew star, Chad Mathew portfolio, Talha Aleem developer, AleemTalha.com, React developer, Next.js developer, full stack developer, professional website development"
-        />
-        <meta name="author" content="https://aleemtalha.com" />
+    <html lang="en" className={`${drukWide.variable} ${drukXCond.variable}`}>
+      <head>
+        <link rel="preload" href="/font/fonnts.com-Druk_Wide_Medium.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/font/DrukXCond-Super-Trial.otf" as="font" type="font/otf" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -47,11 +82,8 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-      </Head>
-      <body
-        className={`${druk.variable} ${poppins.className} antialiased`}
-        style={{ fontFamily: 'var(--font-druk-wide), Arial, sans-serif' }}
-      >
+      </head>
+      <body className={`${drukWide.className} antialiased`}>
         {children}
       </body>
     </html>

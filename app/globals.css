@@ -1,11 +1,19 @@
+/* Tailwind CSS */
 @import "tailwindcss";
 
+/* Local fonts with iOS compatibility */
 @font-face {
   font-family: 'Druk Wide Medium';
   src: url('/font/fonnts.com-Druk_Wide_Medium.ttf') format('truetype');
+  font-weight: 400;
   font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
 @font-face {
@@ -13,45 +21,56 @@
   src: url('/font/DrukXCond-Super-Trial.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
+  ascent-override: 100%;
+  descent-override: 20%;
+  line-gap-override: 0%;
 }
 
+/* CSS Variables */
 :root {
-  --font-druk-wide: 'Druk Wide Medium', sans-serif;
-  --font-druk-xcond: 'DrukXCond Super', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --font-druk-wide: 'Druk Wide Medium', 'Helvetica Neue', Arial, sans-serif;
+  --font-druk-xcond: 'DrukXCond Super', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Enable smooth scrolling globally */
+/* Global Styles */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #F0EFEA;
-  font-family: var(--font-druk-wide);
+  font-family: var(--font-druk-wide); /* Default font is Druk Wide Medium */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-druk-wide); /* Druk Wide Medium as default */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #000000;
-  }
-}
-
+/* Font utility classes */
 .font-druk-wide {
-  font-family: var(--font-druk-wide);
+  font-family: var(--font-druk-wide) !important;
 }
 
 .font-druk-xcond {
-  font-family: var(--font-druk-xcond);
+  font-family: var(--font-druk-xcond) !important;
 }
 
-.poppins {
-  font-family: var(--font-poppins);
+/* 6️⃣ Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+  html {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
 }
-
-/* Hero background is applied inline in `app/page.js` via style attribute.
-  Keep any page-specific background settings there to ensure the correct image path. */
