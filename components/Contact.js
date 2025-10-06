@@ -57,7 +57,7 @@ const Contact = () => {
       formSubmitData.append("_template", "table");
 
       const response = await fetch(
-        "https://formsubmit.co/contact@chadmathew.com",
+        "https://formsubmit.co/contactme@chadmathew.com",
         {
           method: "POST",
           body: formSubmitData,
