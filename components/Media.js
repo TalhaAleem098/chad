@@ -68,16 +68,32 @@ const Media = () => {
 
     const scrollSpeed = 0.5;
     let animationId;
+    let lastTimestamp = 0;
 
-    const autoScroll = () => {
-      if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0;
-      } else {
-        container.scrollLeft += scrollSpeed;
+    // Safari compatibility: Use smooth, consistent scrolling
+    const autoScroll = (timestamp) => {
+      if (!lastTimestamp) lastTimestamp = timestamp;
+      const delta = timestamp - lastTimestamp;
+
+      // Only update if enough time has passed (60fps target)
+      if (delta >= 16) {
+        const maxScroll = container.scrollWidth / 2;
+        
+        if (container.scrollLeft >= maxScroll - 1) {
+          // Seamless loop: jump back to start
+          container.scrollLeft = 0;
+        } else {
+          // Smooth scroll with Safari compatibility
+          container.scrollLeft = Math.round(container.scrollLeft + scrollSpeed);
+        }
+        
+        lastTimestamp = timestamp;
       }
+      
       animationId = requestAnimationFrame(autoScroll);
     };
 
+    // Start animation
     animationId = requestAnimationFrame(autoScroll);
 
     return () => {
@@ -104,10 +120,10 @@ const Media = () => {
     if (container) {
       const scrollAmount = 400;
       const startPosition = container.scrollLeft;
-      const targetPosition = startPosition - scrollAmount;
-      animateScroll(container, startPosition, targetPosition, 200);
+      const targetPosition = Math.max(0, startPosition - scrollAmount);
+      animateScroll(container, startPosition, targetPosition, 300);
     }
-    setTimeout(() => setIsAutoScrolling(true), 2000);
+    setTimeout(() => setIsAutoScrolling(true), 3000);
   };
 
   const scrollRight = () => {
@@ -116,32 +132,41 @@ const Media = () => {
     if (container) {
       const scrollAmount = 400;
       const startPosition = container.scrollLeft;
-      const targetPosition = startPosition + scrollAmount;
-      animateScroll(container, startPosition, targetPosition, 200);
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      const targetPosition = Math.min(maxScroll, startPosition + scrollAmount);
+      animateScroll(container, startPosition, targetPosition, 300);
     }
-    setTimeout(() => setIsAutoScrolling(true), 2000);
+    setTimeout(() => setIsAutoScrolling(true), 3000);
   };
 
   const animateScroll = (container, start, target, duration) => {
     const startTime = performance.now();
+    let rafId;
 
     const animate = (currentTime) => {
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
+      // Smooth easing function
       const easeInOutCubic =
         progress < 0.5
           ? 4 * progress * progress * progress
           : 1 - Math.pow(-2 * progress + 2, 3) / 2;
 
-      container.scrollLeft = start + (target - start) * easeInOutCubic;
+      // Safari compatibility: Round to integer for smoother rendering
+      const newPosition = start + (target - start) * easeInOutCubic;
+      container.scrollLeft = Math.round(newPosition);
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        rafId = requestAnimationFrame(animate);
       }
     };
 
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
+    
+    return () => {
+      if (rafId) cancelAnimationFrame(rafId);
+    };
   };
   return (
     <div className="w-full p-4 ">
@@ -194,9 +219,15 @@ const Media = () => {
           className="overflow-x-auto scrollbar-hide"
           onMouseEnter={() => setIsAutoScrolling(false)}
           onMouseLeave={() => setIsAutoScrolling(true)}
+          onTouchStart={() => setIsAutoScrolling(false)}
+          onTouchEnd={() => setTimeout(() => setIsAutoScrolling(true), 2000)}
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="400"
+          style={{
+            WebkitOverflowScrolling: 'touch',
+            scrollBehavior: 'auto'
+          }}
         >
           <div className="flex gap-4 sm:gap-6 lg:gap-8 pb-4">
             {duplicatedImages.map((imageSrc, index) => (
@@ -278,9 +309,20 @@ const Media = () => {
         .scrollbar-hide {
           -ms-overflow-style: none;
           scrollbar-width: none;
+          /* Safari-specific optimizations */
+          -webkit-overflow-scrolling: touch;
+          scroll-behavior: auto;
         }
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
+        }
+        /* Safari performance optimization */
+        @supports (-webkit-appearance: none) {
+          .scrollbar-hide {
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            will-change: scroll-position;
+          }
         }
       `}</style>
     </div>
