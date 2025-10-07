@@ -43,13 +43,12 @@
 html {
   scroll-behavior: smooth;
   background-color: #F0EFEA;
-  font-family: var(--font-druk-wide); /* Default font is Druk Wide Medium */
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-druk-wide); /* Druk Wide Medium as default */
+  /* font-family: var(--font-druk-wide); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -11,7 +11,9 @@ const wideSpan = "wide-span font-druk-wide text-base";
 
 export default function CVContent() {
   return (
-    <main className={`${mainClass} bg-[#E5DCCF]`}>
+    <main className={`${mainClass} font-semibold bg-[#E5DCCF]`}
+    style={{fontFamily: "sans-serif"}}
+    >
       <h1 style={headingStyle} className={heading}>FILM &amp; TELEVISION</h1>
       <section className={sectionClass}>
         <ul className={listClass}>
@@ -226,7 +228,7 @@ export default function CVContent() {
       <section className={sectionClass}>
         <ul className={listClass}>
           <li className={listItemClass}>
-            <span className={wideSpan}>Dialects &amp; Accents</span> Standard American, Native Australian, British and Irish
+            <span >Dialects &amp; Accents</span> Standard American, Native Australian, British and Irish
           </li>
           <li className={listItemClass}>
             Screen &amp; Stage Acting | Commercial, Lifestyle, Fitness &amp; Corporate Talent

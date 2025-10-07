@@ -132,8 +132,7 @@ const Contact = () => {
           <div>
             <h2 className="text-xl sm:text-2xl font-bold mb-2">Get In Touch</h2>
             <p className="text-sm opacity-75 leading-relaxed">
-              Ready to collaborate? Drop me a message and let&apos;s create
-              something amazing together.
+              Ready to collaborate? Drop me a message
             </p>
           </div>
 

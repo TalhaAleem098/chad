@@ -191,7 +191,7 @@ const Page = () => {
         </div>
       </nav>
 
-      <div className="fixed inset-x-0 top-10 md:top-30 flex items-start lg:items-center pt-4 md:pt-8 justify-center h-[350px] z-0 pointer-events-none">
+      <div className="fixed inset-x-0 top-10 md:top-[180px] flex items-start lg:items-center pt-4 md:pt-12 justify-center h-[350px] z-0 pointer-events-none">
         <h1
           className="text-[42vw] lg:text-[38vw] font-druk-xcond text-center leading-none"
           data-aos="fade-up"
