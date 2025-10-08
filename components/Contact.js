@@ -181,7 +181,7 @@ const Contact = () => {
               required
               rows={4}
               className="w-full px-4 py-3 border border-[#0B3D2E]/30 rounded-lg focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/80 resize-none"
-              placeholder="Tell me about your project, collaboration ideas, or just say hello! *"
+              placeholder="Tell me about your project and Collaboration ideas ?"
             />
 
             <button
