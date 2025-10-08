@@ -250,7 +250,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="mailto:contact@chadmathew.com"
+            href="mailto:contactme@chadmathew.com"
             className="w-10 h-10 sm:w-12 sm:h-12 bg-[#EA4335] text-white rounded-full flex items-center justify-center hover:bg-[#EA4335]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
             title="Email"
           >
