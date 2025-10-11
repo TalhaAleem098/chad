@@ -246,87 +246,85 @@ const Page = () => {
         </section>
 
         <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
-       
-        <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
-          <a
-            href="https://www.starnow.com/u/chadmathew/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FFD700] text-black rounded-full flex items-center justify-center hover:bg-[#FFD700]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
-            title="StarNow"
-          >
-            <img
-              src="/images/starnow.jpeg"
-              alt="starnow"
-              className="rounded-full"
-            />
-          </a>
-
-          <a
-            href="https://www.backstage.com/u/itschadmathew/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-12 sm:h-12 border text-white rounded-full flex items-center justify-center hover:bg-[#1a1a1a]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
-            title="Backstage"
-          >
-            <img src="/images/backstage.png" alt="back stage" className="" />
-          </a>
-         
-
-          <a
-            href="https://www.imdb.com/name/nm9102781/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F5C518] text-black rounded-full flex items-center justify-center hover:bg-[#F5C518]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
-            title="IMDb"
-          >
-            <SiImdb className="w-6 h-6 font-bold" />
-          </a>
-
-          <a
-            href="https://casting.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center hover:bg-[#2563EB]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
-            title="Casting"
-          >
-            <img
-              src="/images/casting.png"
-              alt="casting logo"
-              className="rounded-full"
-            />
-          </a>
-
-           <a
-            href="mailto:contactme@chadmathew.com"
-            className="w-10 h-10 sm:w-12 sm:h-12 bg-[#EA4335] text-white rounded-full flex items-center justify-center hover:bg-[#EA4335]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
-            title="Email"
-          >
-            <FaEnvelope className="w-5 h-5" />
-          </a>
-        </div>
-         <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex justify-center w-full text-xs sm:text-sm">
-            <div>© 2025 Chad Mathew. All rights reserved.</div>
-          </div>
-
-          {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
-        </div>
-        <div className="text-center">
-          <p className="text-xs text-[#0B3D2E]/60 mb-1">
-            Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
-            by{" "}
+          <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
             <a
-              href="https://dev-mateen-rmas.vercel.app/"
+              href="https://www.starnow.com/u/chadmathew/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold text-[#0B3D2E] hover:text-[#0B3D2E]/70 transition-colors duration-300"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FFD700] text-black rounded-full flex items-center justify-center hover:bg-[#FFD700]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
+              title="StarNow"
             >
-              Mateen Ahmad
+              <img
+                src="/images/starnow.jpeg"
+                alt="starnow"
+                className="rounded-full"
+              />
             </a>
-          </p>
-        </div>
-      </footer>
+
+            <a
+              href="https://www.backstage.com/u/itschadmathew/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 border text-white rounded-full flex items-center justify-center hover:bg-[#1a1a1a]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
+              title="Backstage"
+            >
+              <img src="/images/backstage.png" alt="back stage" className="" />
+            </a>
+
+            <a
+              href="https://www.imdb.com/name/nm9102781/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F5C518] text-black rounded-full flex items-center justify-center hover:bg-[#F5C518]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
+              title="IMDb"
+            >
+              <SiImdb className="w-6 h-6 font-bold" />
+            </a>
+
+            <a
+              href="https://casting.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-[#2563EB] text-white rounded-full flex items-center justify-center hover:bg-[#2563EB]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
+              title="Casting"
+            >
+              <img
+                src="/images/casting.png"
+                alt="casting logo"
+                className="rounded-full"
+              />
+            </a>
+
+            <a
+              href="mailto:contactme@chadmathew.com"
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-[#EA4335] text-white rounded-full flex items-center justify-center hover:bg-[#EA4335]/80 hover:scale-110 transition-all duration-300 shadow-lg hover:shadow-xl flex-shrink-0"
+              title="Email"
+            >
+              <FaEnvelope className="w-5 h-5" />
+            </a>
+          </div>
+          <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex text-center w-full text-xs font-normal sm:text-sm">
+              <div>© 2025 Chad Mathew. All rights reserved.</div>
+            </div>
+
+            {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
+          </div>
+          <div className="text-center">
+            <p className="text-xs text-[#0B3D2E]/60 mb-1">
+              Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
+              by{" "}
+              <a
+                href="https://dev-mateen-rmas.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#0B3D2E] hover:text-[#0B3D2E]/70 transition-colors duration-300"
+              >
+                Mateen Ahmad
+              </a>
+            </p>
+          </div>
+        </footer>
 
         {/* <div className="bg-[#E5DCCF] flex justify-center">< FaCircle size={20} /></div> */}
 
@@ -358,8 +356,6 @@ const Page = () => {
           </div>
         </section> */}
       </main>
-
-      
     </div>
   );
 };
