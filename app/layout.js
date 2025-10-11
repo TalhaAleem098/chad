@@ -37,7 +37,7 @@ const drukXCond = localFont({
 export const metadata = {
   title: "Chad Mathew | Official Website",
   description: "Chad Mathew is a talented personality known as a model, anchor, and rising star. His work and presence reflect creativity and style. This website is designed and developed by Talha Aleem from AleemTalha.com, showcasing professional and modern web development.",
-  keywords: "Chad Mathew, Chad Mathew model, Chad Mathew anchor, Chad Mathew official, Chad Mathew star, Chad Mathew portfolio, Talha Aleem developer, AleemTalha.com, React developer, Next.js developer, full stack developer, professional website development",
+  keywords: "Chad Mathew, Chad Mathew model, Chad Mathew anchor, Chad Mathew official, Chad Mathew star, Chad Mathew portfolio, Talha Aleem developer, AleemTalha.com, React developer, Next.js developer, full stack developer, professional website development, Actor, Model, Presenter, and Content Creator, National Institute of Dramatic Art (NIDA), Australian Film and Television Academy (TAFTA), The Actors Centre (Sydney), Victorian College of the Arts (VCA), Sydney Drama School, Rogues West Acting School (Vancouver, Canada), Royal Academy of Dramatic Art (RADA, London), Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, Cleverman, Crownies, Behind Mansion Walls, Deadly Women, The Wedge, Satisfaction, The Librarians, OpenShop, TV Shop, Outlook TV, Out TV, Bent TV, JOY 96.9FM",
   authors: [{ name: "Talha Aleem", url: "https://aleemtalha.com" }],
   creator: "Talha Aleem",
   publisher: "Talha Aleem",
@@ -58,8 +58,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${drukWide.variable} ${drukXCond.variable}`}>
       <head>
-        <link rel="preload" href="/font/fonnts.com-Druk_Wide_Medium.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      <link rel="preload" href="/font/fonnts.com-Druk_Wide_Medium.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/font/DrukXCond-Super-Trial.otf" as="font" type="font/otf" crossOrigin="anonymous" />
+      <meta name="keywords" content="Actor, Model, Presenter, and Content Creator, National Institute of Dramatic Art (NIDA), Australian Film and Television Academy (TAFTA), The Actors Centre (Sydney), Victorian College of the Arts (VCA), Sydney Drama School, Rogues West Acting School (Vancouver, Canada), Royal Academy of Dramatic Art (RADA, London), Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, Cleverman, Crownies, Behind Mansion Walls, Deadly Women, The Wedge, Satisfaction, The Librarians, OpenShop, TV Shop, Outlook TV, Out TV, Bent TV, JOY 96.9FM" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
