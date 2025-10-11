@@ -278,13 +278,14 @@ const Page = () => {
 
       <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left text-sm sm:text-base">
-            <span>© 2025 Chad Mathew. All rights reserved.</span>
+          <div className="flex justify-between md:text-left text-sm sm:text-base">
+            <span>© 2025 Chad Mathew.</span>
+            <span> All rights reserved.</span>
           </div>
 
           {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
         </div>
-        <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
+        {/* <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
           <a
             href="https://www.starnow.com/u/chadmathew/"
             target="_blank"
@@ -341,8 +342,8 @@ const Page = () => {
           >
             <FaEnvelope className="w-5 h-5" />
           </a>
-        </div>
-        <div className="text-center">
+        </div> */}
+        {/* <div className="text-center">
           <p className="text-xs text-[#0B3D2E]/60 mb-1">
             Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
             by{" "}
@@ -355,7 +356,7 @@ const Page = () => {
               Mateen Ahmad
             </a>
           </p>
-        </div>
+        </div> */}
       </footer>
     </div>
   );
