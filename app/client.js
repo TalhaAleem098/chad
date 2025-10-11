@@ -304,7 +304,7 @@ const Page = () => {
             </a>
           </div>
           <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex text-center w-full text-xs font-normal sm:text-sm">
+            <div className="flex text-center justify-center w-full text-xs font-normal sm:text-sm">
               <div>© 2025 Chad Mathew. All rights reserved.</div>
             </div>
 
