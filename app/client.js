@@ -254,7 +254,7 @@ const Page = () => {
 
           {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
         </div>
-        {/* <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
+        <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
           <a
             href="https://www.starnow.com/u/chadmathew/"
             target="_blank"
@@ -311,7 +311,7 @@ const Page = () => {
           >
             <FaEnvelope className="w-5 h-5" />
           </a>
-        </div> */}
+        </div>
         <div className="text-center">
           <p className="text-xs text-[#0B3D2E]/60 mb-1">
             Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
