@@ -343,7 +343,7 @@ const Page = () => {
             <FaEnvelope className="w-5 h-5" />
           </a>
         </div> */}
-        {/* <div className="text-center">
+        <div className="text-center">
           <p className="text-xs text-[#0B3D2E]/60 mb-1">
             Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
             by{" "}
@@ -356,7 +356,7 @@ const Page = () => {
               Mateen Ahmad
             </a>
           </p>
-        </div> */}
+        </div>
       </footer>
     </div>
   );
