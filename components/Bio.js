@@ -17,7 +17,7 @@ const Bio = () => {
 
   <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 mx-auto font-semibold">
         <div
-          className="text-xs sm:text-sm  leading-relaxed"
+          className="text-base sm:text-base leading-relaxed"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="200"
@@ -35,7 +35,7 @@ const Bio = () => {
 
         {/* Column 2 */}
         <div
-          className="text-xs sm:text-sm leading-relaxed"
+          className="text-base sm:text-base leading-relaxed"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="400"
@@ -53,7 +53,7 @@ const Bio = () => {
 
         {/* Column 3 */}
         <div
-          className="text-xs sm:text-sm leading-relaxed"
+          className="text-base sm:text-base leading-relaxed"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="600"
@@ -71,14 +71,14 @@ const Bio = () => {
       </div>
       <style jsx>{`
         /* All text is semi-bold and equal, slightly smaller font size for a clean, consistent look */
-        .text-xs sm:text-sm, .text-base, p {
-          font-weight: 600;
+        .text-base, .text-base, p {
+          font-weight: 700;
           color: inherit;
           font-size: 0.97rem;
           line-height: 1.6;
         }
         @media (min-width: 1024px) {
-          .text-xs sm:text-sm, .text-base, p {
+          .text-base, .text-base, p {
             font-size: 1rem;
           }
         }
