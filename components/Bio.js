@@ -15,7 +15,7 @@ const Bio = () => {
         </h1>
       </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 max-w-7xl mx-auto font-normal">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 mx-auto font-normal">
         <div
           className="text-sm sm:text-base leading-relaxed"
           data-aos="fade-up"
@@ -78,10 +78,20 @@ const Bio = () => {
           -webkit-text-fill-color: #000; /* ensure black fill on WebKit/Safari */
           text-shadow: none;
         }
-        /* Ensure normal text is visually lighter */
+        /* Increase overall normal text size and improve readability */
         .text-sm, .text-base, p {
           font-weight: 400;
           color: inherit;
+          /* slightly larger than default for better readability */
+          font-size: calc(1rem + 1px);
+          line-height: 1.65;
+        }
+
+        /* Slightly bump paragraph spacing on large screens */
+        @media (min-width: 1024px) {
+          .text-sm, .text-base, p {
+            font-size: calc(1rem + 2px);
+          }
         }
       `}</style>
     </div>
