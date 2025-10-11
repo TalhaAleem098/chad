@@ -74,10 +74,14 @@ const Bio = () => {
           /* Try to use a very heavy weight; if the font doesn't support 1000 the browser will use the closest available (usually 900) */
           font-weight: 1000;
           font-size: calc(1em + 2px);
+          color: #000; /* pure black */
+          -webkit-text-fill-color: #000; /* ensure black fill on WebKit/Safari */
+          text-shadow: none;
         }
         /* Ensure normal text is visually lighter */
         .text-sm, .text-base, p {
           font-weight: 400;
+          color: inherit;
         }
       `}</style>
     </div>
