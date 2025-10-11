@@ -246,6 +246,13 @@ const Page = () => {
         </section>
 
         <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
+          <div className=" mx-auto px-1 md:px-3 py-6 flex flex-col md:flex-row items-center justify-between">
+            <div className="flex text-center justify-center w-full text-xs font-normal sm:text-sm">
+              <div className="text-xs font-normal sm:text-sm">
+                © 2025 Chad Mathew. All rights reserved.
+              </div>
+            </div>
+          </div>
           <div className="flex mb-4 flex-nowrap overflow-x-auto sm:overflow-visible gap-2 sm:gap-3 justify-center">
             <a
               href="https://www.starnow.com/u/chadmathew/"
@@ -303,12 +310,7 @@ const Page = () => {
               <FaEnvelope className="w-5 h-5" />
             </a>
           </div>
-          <div className=" mx-auto px-1 md:px-3 py-6 flex flex-col md:flex-row items-center justify-between">
-            <div className="flex text-center justify-center w-full text-xs font-normal sm:text-sm">
-              <div>© 2025 Chad Mathew. All rights reserved.</div>
-            </div>
 
-          </div>
           <div className="text-center">
             <p className="text-xs text-[#0B3D2E]/60 mb-1">
               Made with <FaHeart className="inline w-3 h-3 text-red-500 mx-1" />{" "}
