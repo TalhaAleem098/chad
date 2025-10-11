@@ -245,42 +245,11 @@ const Page = () => {
           <Bio />
         </section>
 
-        {/* <div className="bg-[#E5DCCF] flex justify-center">< FaCircle size={20} /></div> */}
-
-        {/* <section
-          id="contact"
-          className="min-h-[60vh] flex items-center justify-center bg-[#E5DCCF] py-12 sm:py-16 lg:py-20"
-        >
-
-          <div className="text-center w-full mx-auto px-6">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Stay Connected</h2>
-            <div className=" mx-auto">
-              <form className="flex w-full flex-col sm:flex-row gap-4" onSubmit={(e) => e.preventDefault()}>
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-4 border-2 border-[#0B3D2E]/20 rounded-full focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm text-[#0B3D2E] placeholder-[#0B3D2E]/60"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="px-8 py-4 bg-[#0B3D2E] text-white rounded-full font-semibold hover:bg-[#0B3D2E]/90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl whitespace-nowrap"
-                >
-                  Subscribe
-                </button>
-              </form>
-
-            </div>
-
-          </div>
-        </section> */}
-      </main>
-
-      <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
+        <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex justify-between md:text-left text-sm sm:text-base">
-            <span>© 2025 Chad Mathew.</span>
-            <span> All rights reserved.</span>
+          <div className="flex justify-between text-sm sm:text-base">
+            <div>© 2025 Chad Mathew.</div>
+            <div> All rights reserved.</div>
           </div>
 
           {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
@@ -358,6 +327,39 @@ const Page = () => {
           </p>
         </div>
       </footer>
+
+        {/* <div className="bg-[#E5DCCF] flex justify-center">< FaCircle size={20} /></div> */}
+
+        {/* <section
+          id="contact"
+          className="min-h-[60vh] flex items-center justify-center bg-[#E5DCCF] py-12 sm:py-16 lg:py-20"
+        >
+
+          <div className="text-center w-full mx-auto px-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Stay Connected</h2>
+            <div className=" mx-auto">
+              <form className="flex w-full flex-col sm:flex-row gap-4" onSubmit={(e) => e.preventDefault()}>
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  className="flex-1 px-6 py-4 border-2 border-[#0B3D2E]/20 rounded-full focus:border-[#0B3D2E] focus:outline-none transition-all duration-300 bg-white/70 backdrop-blur-sm text-[#0B3D2E] placeholder-[#0B3D2E]/60"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="px-8 py-4 bg-[#0B3D2E] text-white rounded-full font-semibold hover:bg-[#0B3D2E]/90 transition-all duration-300 transform hover:scale-105 hover:shadow-xl whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </form>
+
+            </div>
+
+          </div>
+        </section> */}
+      </main>
+
+      
     </div>
   );
 };

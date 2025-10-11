@@ -15,7 +15,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 max-w-7xl mx-auto font-bold">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 max-w-7xl mx-auto font-normal">
         <div
           className="text-sm sm:text-base leading-relaxed"
           data-aos="fade-up"
@@ -71,8 +71,13 @@ const Bio = () => {
       </div>
       <style jsx>{`
         .bio-strong {
-          font-weight: 800; /* extra bold */
+          /* Try to use a very heavy weight; if the font doesn't support 1000 the browser will use the closest available (usually 900) */
+          font-weight: 1000;
           font-size: calc(1em + 2px);
+        }
+        /* Ensure normal text is visually lighter */
+        .text-sm, .text-base, p {
+          font-weight: 400;
         }
       `}</style>
     </div>
