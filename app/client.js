@@ -303,12 +303,11 @@ const Page = () => {
               <FaEnvelope className="w-5 h-5" />
             </a>
           </div>
-          <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className=" mx-auto px-1 md:px-3 py-6 flex flex-col md:flex-row items-center justify-between">
             <div className="flex text-center justify-center w-full text-xs font-normal sm:text-sm">
               <div>© 2025 Chad Mathew. All rights reserved.</div>
             </div>
 
-            {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
           </div>
           <div className="text-center">
             <p className="text-xs text-[#0B3D2E]/60 mb-1">
