@@ -248,8 +248,7 @@ const Page = () => {
         <footer className="bg-[#E5DCCF] text-[#0B3D2E] border-t border-[#0B3D2E]/10">
         <div className=" mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex justify-between w-full text-sm sm:text-base">
-            <div>© 2025 Chad Mathew.</div>
-            <div> All rights reserved.</div>
+            <div>© 2025 Chad Mathew. All rights reserved.</div>
           </div>
 
           {/* <a href="mailto:contactme@chadmathew.com">contactme@chadmathew.com</a> */}
