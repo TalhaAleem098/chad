@@ -21,7 +21,7 @@ const Bio = () => {
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+          <p className="text-sm sm:text-base lg:text-lg leading-7 text-black font-bold">
             Based in Sydney, Australia, I am a professional Actor, Model,
             Presenter, and Content Creator with over 20 years of experience
             across the international entertainment industry. My career has taken
@@ -29,7 +29,7 @@ const Bio = () => {
             radio stations, and digital platforms—each offering new
             opportunities to perform, connect, and create.
           </p>
-          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+          <p className="text-sm sm:text-base lg:text-lg leading-7 text-black font-bold">
             Over the years, I have worked extensively across film, television,
             modelling, and presenting for both stage and screen, including radio
             and community television. Alongside numerous commercial campaigns
@@ -37,7 +37,7 @@ const Bio = () => {
             exceptional creative teams and production companies around the
             world.
           </p>
-          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+          <p className="text-sm sm:text-base lg:text-lg leading-7 text-black font-bold">
             I have commercially represented some of the world&apos;s most recognised
             brands—including Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car
             Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, and many
