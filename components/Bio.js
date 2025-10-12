@@ -2,10 +2,8 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8" 
-    style={{fontFamily: "sans-serif"}}
-    >
-      <div 
+    <div className="w-full px-4 sm:px-6 lg:px-8">
+      <div
         className="text-left mb-8 sm:mb-12 lg:mb-16"
         data-aos="fade-right"
         data-aos-duration="800"
@@ -15,74 +13,105 @@ const Bio = () => {
         </h1>
       </div>
 
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 mx-auto font-semibold">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 w-full font-poppins" >
+        {/* Column 1 */}
         <div
-          className="text-base sm:text-base leading-relaxed"
+          className="space-y-6"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          <p className="mb-3 lg:mb-6">
-            Based in Sydney, Australia, I am a professional Actor, Model, Presenter, and Content Creator with over 20 years of experience across the international entertainment industry. My career has taken me from film and television sets to photo studios, live stages, radio stations, and digital platforms—each offering new opportunities to perform, connect, and create.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+            Based in Sydney, Australia, I am a professional Actor, Model,
+            Presenter, and Content Creator with over 20 years of experience
+            across the international entertainment industry. My career has taken
+            me from film and television sets to photo studios, live stages,
+            radio stations, and digital platforms—each offering new
+            opportunities to perform, connect, and create.
           </p>
-          <p className="mb-3 lg:mb-6">
-            Over the years, I have worked extensively across film, television, modelling, and presenting for both stage and screen, including radio and community television. Alongside numerous commercial campaigns within Australia and abroad, I’ve been fortunate to collaborate with exceptional creative teams and production companies around the world.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+            Over the years, I have worked extensively across film, television,
+            modelling, and presenting for both stage and screen, including radio
+            and community television. Alongside numerous commercial campaigns
+            within Australia and abroad, I&apos;ve been fortunate to collaborate with
+            exceptional creative teams and production companies around the
+            world.
           </p>
-          <p className="mb-3 lg:mb-6">
-            I have commercially represented some of the world’s most recognised brands—including Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, and many more—both online and on air.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-black font-bold">
+            I have commercially represented some of the world&apos;s most recognised
+            brands—including Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car
+            Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, and many
+            more—both online and on air.
           </p>
         </div>
 
         {/* Column 2 */}
         <div
-          className="text-base sm:text-base leading-relaxed"
+          className="space-y-6"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          <p className="mb-3 lg:mb-6">
-            My passion for performance began early, singing in my school choir and taking part in yearly stage productions. That early love of storytelling evolved into a lifelong pursuit of the craft. To refine my skills, I’ve studied at some of the most respected acting schools and institutions both locally and internationally, including National Institute of Dramatic Art (NIDA), Australian Film and Television Academy (TAFTA), The Actors Centre (Sydney), Victorian College of the Arts (VCA), Sydney Drama School, Rogues West Acting School (Vancouver, Canada), and Royal Academy of Dramatic Art (RADA, London).
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            My passion for performance began early, singing in my school choir
+            and taking part in yearly stage productions. That early love of
+            storytelling evolved into a lifelong pursuit of the craft. To refine
+            my skills, I&apos;ve studied at some of the most respected acting schools
+            and institutions both locally and internationally, including
+            National Institute of Dramatic Art (NIDA), Australian Film and
+            Television Academy (TAFTA), The Actors Centre (Sydney), Victorian
+            College of the Arts (VCA), Sydney Drama School, Rogues West Acting
+            School (Vancouver, Canada), and Royal Academy of Dramatic Art (RADA,
+            London).
           </p>
-          <p className="mb-3 lg:mb-6">
-            Throughout my career, I’ve had the privilege of working with many talented directors, producers, ADs, photographers, videographers, and production crews across the globe. I’ve appeared in a wide range of film and television productions and have commercially represented some of the world’s most recognised brands.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            Throughout my career, I&apos;ve had the privilege of working with many
+            talented directors, producers, ADs, photographers, videographers,
+            and production crews across the globe. I&apos;ve appeared in a wide range
+            of film and television productions and have commercially represented
+            some of the world&apos;s most recognised brands.
           </p>
-          <p className="mb-3 lg:mb-6">
-            Acting has always been at the heart of what I do. I’ve had the opportunity to play lead, featured, supporting, and character roles across both film and television, with screen credits including Cleverman, Crownies, Behind Mansion Walls, Deadly Women, The Wedge, Satisfaction, and The Librarians.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            Acting has always been at the heart of what I do. I&apos;ve had the
+            opportunity to play lead, featured, supporting, and character roles
+            across both film and television, with screen credits including
+            Cleverman, Crownies, Behind Mansion Walls, Deadly Women, The Wedge,
+            Satisfaction, and The Librarians.
           </p>
         </div>
 
         {/* Column 3 */}
         <div
-          className="text-base sm:text-base leading-relaxed"
+          className="space-y-6"
           data-aos="fade-up"
           data-aos-duration="800"
           data-aos-delay="600"
         >
-          <p className="mb-3 lg:mb-6">
-            I have also enjoyed a strong career in live television presenting—appearing on OpenShop, TV Shop, and hosting community programs and radio shows for Outlook TV, Out TV, Bent TV, and JOY 96.9FM, celebrating diverse voices within the LGBTQIA+ community.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            I have also enjoyed a strong career in live television
+            presenting—appearing on OpenShop, TV Shop, and hosting community
+            programs and radio shows for Outlook TV, Out TV, Bent TV, and JOY
+            96.9FM, celebrating diverse voices within the LGBTQIA+ community.
           </p>
-          <p className="mb-3 lg:mb-6">
-            In recent years, I have embraced the creative potential of digital platforms and social media. Working directly with clients online has opened new doors for collaboration, storytelling, and brand partnerships, allowing me to merge my industry experience with modern content creation.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            In recent years, I have embraced the creative potential of digital
+            platforms and social media. Working directly with clients online has
+            opened new doors for collaboration, storytelling, and brand
+            partnerships, allowing me to merge my industry experience with
+            modern content creation.
           </p>
-          <p className="mt-4">
-            Health, fitness, and wellness are core parts of who I am, both personally and professionally. I believe in maintaining a healthy lifestyle and positive mindset, and I’ve had the pleasure of working on campaigns that promote wellbeing, adventure, and self-improvement. My sense of self and adventure has taken me all around the world and back again—and what an incredible journey it’s been. I’m Australian born, Australian proud, and more motivated than ever to keep creating, collaborating, and moving forward.
+          <p className="text-sm sm:text-base lg:text-lg leading-7 font-bold">
+            Health, fitness, and wellness are core parts of who I am, both
+            personally and professionally. I believe in maintaining a healthy
+            lifestyle and positive mindset, and I&apos;ve had the pleasure of working
+            on campaigns that promote wellbeing, adventure, and
+            self-improvement. My sense of self and adventure has taken me all
+            around the world and back again—and what an incredible journey it&apos;s
+            been. I&apos;m Australian born, Australian proud, and more motivated than
+            ever to keep creating, collaborating, and moving forward.
           </p>
         </div>
       </div>
-      <style jsx>{`
-        /* All text is semi-bold and equal, slightly smaller font size for a clean, consistent look */
-        .text-base, .text-base, p {
-          font-weight: 700;
-          color: inherit;
-          font-size: 0.97rem;
-          line-height: 1.6;
-        }
-        @media (min-width: 1024px) {
-          .text-base, .text-base, p {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
     </div>
   );
 };

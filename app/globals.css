@@ -31,6 +31,7 @@
 :root {
   --font-druk-wide: 'Druk Wide Medium', 'Helvetica Neue', Arial, sans-serif;
   --font-druk-xcond: 'DrukXCond Super', 'Helvetica Neue', Arial, sans-serif;
+  --font-poppins: 'Poppins', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Global Styles */
@@ -48,7 +49,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* font-family: var(--font-druk-wide); */
+  font-family: var(--font-druk-wide);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -62,6 +63,12 @@ body {
   font-family: var(--font-druk-xcond) !important;
 }
 
+/* Poppins utility class (defined but not applied anywhere) */
+.font-poppins {
+  /* Use the CSS variable injected by next/font when available; otherwise fall back to Poppins */
+  font-family: var(--font-poppins, 'Poppins', 'Helvetica Neue', Arial, sans-serif) !important;
+}
+
 /* 6️⃣ Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -73,3 +80,5 @@ body {
     color: var(--foreground);
   }
 }
+
+
