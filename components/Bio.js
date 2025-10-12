@@ -77,7 +77,7 @@ import React from "react";
 const Bio = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8" 
-    style={{fontFamily: "sans-serif"}}
+    // style={{fontFamily: "sans-serif"}}
     >
       <div 
         className="text-left mb-8 sm:mb-12 lg:mb-16"
@@ -89,7 +89,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mx-auto font-bold">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mx-auto bolder">
         <div
           className="text-sm sm:text-base leading-relaxed"
           data-aos="fade-up"
