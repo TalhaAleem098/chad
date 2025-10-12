@@ -2,14 +2,6 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 
-// Poppins Font - Available as utility class
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
-  display: "swap",
-  preload: true,
-});
 
 // Druk Wide Medium - Primary/Default Font
 const drukWide = localFont({
@@ -230,7 +222,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en-AU"
-      className={`${poppins.variable} ${drukWide.variable} ${drukXCond.variable}`}
+      className={` ${drukWide.variable} ${drukXCond.variable}`}
     >
       <head>
         <link
