@@ -1,7 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
 
-// Druk Wide Medium - Primary/Default Font
 const drukWide = localFont({
   src: [
     {
@@ -17,7 +16,6 @@ const drukWide = localFont({
   adjustFontFallback: false,
 });
 
-// DrukXCond Super - Secondary Font
 const drukXCond = localFont({
   src: [
     {
