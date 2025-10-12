@@ -2,7 +2,7 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8">
+    <div className="w-full px-4 sm:px-6 lg:px-8 text-black">
       <div
         className="text-left mb-8 sm:mb-12 lg:mb-16"
         data-aos="fade-right"
