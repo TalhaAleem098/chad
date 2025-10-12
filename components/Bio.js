@@ -101,7 +101,7 @@ const Bio = () => {
             modern content creation.
           </p>
           <p className="text-[16px] sm:text-base lg:text-lg leading-7 ">
-            Health, fitness, and wellness are core parts of who I am, both
+            Home: Health, fitness, and wellness are core parts of who I am, both
             personally and professionally. I believe in maintaining a healthy
             lifestyle and positive mindset, and I&apos;ve had the pleasure of working
             on campaigns that promote wellbeing, adventure, and
