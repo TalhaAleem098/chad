@@ -21,7 +21,7 @@ const Bio = () => {
           data-aos-duration="800"
           data-aos-delay="200"
         >
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 text-black ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 text-black ">
             Based in Sydney, Australia, I am a professional Actor, Model,
             Presenter, and Content Creator with over 20 years of experience
             across the international entertainment industry. My career has taken
@@ -29,7 +29,7 @@ const Bio = () => {
             radio stations, and digital platforms—each offering new
             opportunities to perform, connect, and create.
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 text-black ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 text-black ">
             Over the years, I have worked extensively across film, television,
             modelling, and presenting for both stage and screen, including radio
             and community television. Alongside numerous commercial campaigns
@@ -37,7 +37,7 @@ const Bio = () => {
             exceptional creative teams and production companies around the
             world.
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 text-black ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 text-black ">
             I have commercially represented some of the world&apos;s most recognised
             brands—including Qantas, Jetstar, BMW, RSPCA, Cancer Council, Car
             Australia, DiDi, ING, Chemist Warehouse, Luxaflex, OzCar, and many
@@ -52,7 +52,7 @@ const Bio = () => {
           data-aos-duration="800"
           data-aos-delay="400"
         >
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             My passion for performance began early, singing in my school choir
             and taking part in yearly stage productions. That early love of
             storytelling evolved into a lifelong pursuit of the craft. To refine
@@ -64,14 +64,14 @@ const Bio = () => {
             School (Vancouver, Canada), and Royal Academy of Dramatic Art (RADA,
             London).
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             Throughout my career, I&apos;ve had the privilege of working with many
             talented directors, producers, ADs, photographers, videographers,
             and production crews across the globe. I&apos;ve appeared in a wide range
             of film and television productions and have commercially represented
             some of the world&apos;s most recognised brands.
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             Acting has always been at the heart of what I do. I&apos;ve had the
             opportunity to play lead, featured, supporting, and character roles
             across both film and television, with screen credits including
@@ -87,20 +87,20 @@ const Bio = () => {
           data-aos-duration="800"
           data-aos-delay="600"
         >
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             I have also enjoyed a strong career in live television
             presenting—appearing on OpenShop, TV Shop, and hosting community
             programs and radio shows for Outlook TV, Out TV, Bent TV, and JOY
             96.9FM, celebrating diverse voices within the LGBTQIA+ community.
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             In recent years, I have embraced the creative potential of digital
             platforms and social media. Working directly with clients online has
             opened new doors for collaboration, storytelling, and brand
             partnerships, allowing me to merge my industry experience with
             modern content creation.
           </p>
-          <p className="text-[13px] sm:text-base lg:text-lg leading-7 ">
+          <p className="text-[14px] sm:text-base lg:text-lg leading-7 ">
             Health, fitness, and wellness are core parts of who I am, both
             personally and professionally. I believe in maintaining a healthy
             lifestyle and positive mindset, and I&apos;ve had the pleasure of working
