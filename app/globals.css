@@ -65,7 +65,11 @@ body {
 
 /* Poppins utility class (defined but not applied anywhere) */
 .font-poppins {
-  /* Use the CSS variable injected by next/font when available; otherwise fall back to Poppins */
+  font-family: var(--font-poppins, 'Poppins', 'Helvetica Neue', Arial, sans-serif) !important;
+}
+
+.bold-poppins {
+  font-weight: 800!important;
   font-family: var(--font-poppins, 'Poppins', 'Helvetica Neue', Arial, sans-serif) !important;
 }
 
