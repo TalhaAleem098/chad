@@ -13,7 +13,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 w-full lg:font-sans font-extrabold bolder" >
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 w-full lg:font-sans font-extrabold bolder bio-color" >
         {/* Column 1 */}
         <div
           className="space-y-6"
