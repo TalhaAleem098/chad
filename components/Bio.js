@@ -2,7 +2,7 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 text-black">
+    <div className="w-full px-4 sm:px-6 lg:px-8">
       <div
         className="text-left mb-8 sm:mb-12 lg:mb-16"
         data-aos="fade-right"
@@ -13,7 +13,7 @@ const Bio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 w-full font-sans font-extrabold" >
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-12 w-full lg:font-sans font-extrabold bolder" >
         {/* Column 1 */}
         <div
           className="space-y-6"
